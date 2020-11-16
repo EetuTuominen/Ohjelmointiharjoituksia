@@ -152,6 +152,8 @@ kurssinappi.addEventListener("click", e=>{
   li.appendChild(document.createTextNode(`${nimiSisalto.value}:
   ${asiaSisalto.value}`));
 
+  viesti.appendChild(li);
+
   nimiSisalto.value = ``;
   asiaSisalto.value = ``;
 }
