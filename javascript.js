@@ -144,14 +144,16 @@ const asiaSisalto = document.querySelector(".tieto");
 const virhe = document.querySelector(".virheilmoitus");
 const viesti = document.querySelector("#tiedot");
 
-kurssinappi.addEventListener("click", e=>{
-  e.preventDefault();
+kurssinappi.addEventListener('click', e=>{
+    e.preventDefault();
 
   if(nimiSisalto.value === ""|| asiaSisalto.value === ""){
    virhe.classList.add("virhe");
    virhe.innerHTML= "Täytä kaikki kentät";
    kurssinappi.style.background = `red`;
    kurssinappi.value= `Virhe, en lisännyt tietoa,`;
+   setTimeout(()=> virhe.remove(), 3000);
+   setTimeout(()=> kurssinappistyle.background = 'rgb(51, 44, 44)'(), 3000);
   }else{
   const li = document.createElement("li");
 
@@ -163,3 +165,26 @@ kurssinappi.addEventListener("click", e=>{
   nimiSisalto.value = ``;
   asiaSisalto.value = ``;
 });
+
+const merkitseValmiit = document.querySelector('.merkinta');
+
+merkitseValmiit.addEventListener('click', e => {
+  e.preventDefault();
+  
+  if(document.querySelector('#tehta').checked){
+  ul.children[0].innerHTML = '<input type="checkbox" id="tehta" checked>HTML tunnit pidetty';
+  }else{
+    
+  });
+  if(document.querySelector('#tehta').checked){
+  ul.children[1].innerHTML = '<input type="checkbox" id="tehta" checked>HTML tunnit pidetty';
+  }
+  });
+  if(document.querySelector('#tehta').checked){
+  ul.children[2].innerHTML = '<input type="checkbox" id="tehta" checked>HTML tunnit pidetty';
+  }
+  });
+  });
+  if(document.querySelector('#tehta').checked){
+  ul.children[3].innerHTML = '<input type="checkbox" id="tehta" checked>HTML tunnit pidetty';
+  }
