@@ -131,11 +131,10 @@ function laskutehtava(){
 
 } 
 console.log(laskutehtava(5, 2));
-}
 
 const kurssinosat = document.querySelectorAll(".sisalto");
 
-kurssinosat.forEach((osa)=>console.log));
+kurssinOsat.forEach((osa)=>console.log));
 
 const ul = document.querySelector(".kurssi");
 const kurssinappi = document.querySelector(".kurssinappi");
@@ -174,7 +173,7 @@ merkitseValmiit.addEventListener('click', e => {
   if(document.querySelector('#tehta').checked){
   ul.children[0].innerHTML = '<input type="checkbox" id="tehta" checked>HTML tunnit pidetty';
   }else{
-    
+
   });
   if(document.querySelector('#tehta').checked){
   ul.children[1].innerHTML = '<input type="checkbox" id="tehta" checked>HTML tunnit pidetty';
