@@ -147,6 +147,12 @@ const viesti = document.querySelector("#tiedot");
 kurssinappi.addEventListener("click", e=>{
   e.preventDefault();
 
+  if(nimiSisalto.value === ""|| asiaSisalto.value === ""){
+   virhe.classList.add("virhe");
+   virhe.innerHTML= "Täytä kaikki kentät";
+   kurssinappi.style.background = `red`;
+   kurssinappi.value= `Virhe, en lisännyt tietoa,`;
+  }else{
   const li = document.createElement("li");
 
   li.appendChild(document.createTextNode(`${nimiSisalto.value}:
@@ -156,4 +162,4 @@ kurssinappi.addEventListener("click", e=>{
 
   nimiSisalto.value = ``;
   asiaSisalto.value = ``;
-}
+});
