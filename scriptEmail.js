@@ -22,7 +22,7 @@ function sendJSON(){
     "EmailMsg": "Tähän tulee postin sisältö", //kirjoittaa sahkopostin sisallon
     "EmailAddress": "mira.vorne@salpaus.fi", //viestin kirjoittajan sahkopostin
     "EmailTo": "eetu.tuominen@edu.salpaus.fi", //sahkoposti
-    "EmailName": "Teppo tyyppi" //nimi kentan sisalto
+    "EmailName": "Teppo tyyppi", //nimi kentan sisalto
   });
   xhr.send(data);
 }
