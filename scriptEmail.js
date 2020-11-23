@@ -9,7 +9,6 @@ sendJSON();
 function sendJSON(){
   let xhr = new XMLHttpRequest();
   let url = "https://salpausemail.azurewebsites.net/api/HttpTriggerCSharp1?code=lWOELqiU07AqsBviOQYzuNIrQP7xoV7NV7C5W2ctgjIRcf7nXE2biw==";
-
   xhr.open("POST", url, true);
 
   xhr.setRequestHeader("Content-type", "application/json");
@@ -22,8 +21,8 @@ function sendJSON(){
   var data = JSON.stringify({
     "EmailMsg": "Tähän tulee postin sisältö", //kirjoittaa sahkopostin sisallon
     "EmailAddress": "mira.vorne@salpaus.fi", //viestin kirjoittajan sahkopostin
-    "EmailTo": "herkinen@gmail.com", //sahkoposti
+    "EmailTo": "eetu.tuominen@edu.salpaus.fi", //sahkoposti
     "EmailName": "Teppo tyyppi" //nimi kentan sisalto
   });
-  xhr.send(data);
+  xhr.send("data");
 }
