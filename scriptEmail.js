@@ -24,5 +24,5 @@ function sendJSON(){
     "EmailTo": "eetu.tuominen@edu.salpaus.fi", //sahkoposti
     "EmailName": "Teppo tyyppi" //nimi kentan sisalto
   });
-  xhr.send("data");
+  xhr.send(data);
 }
