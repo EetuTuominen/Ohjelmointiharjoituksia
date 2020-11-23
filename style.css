@@ -119,7 +119,7 @@ width:100%;
 padding:8px;
 margin-bottom:10px;
 border-radius:5px;
-border:1px solid blueviolet;
+border:1px solid #637281;
 }
 .kurssinappi{
   display: block;
@@ -132,7 +132,7 @@ border:1px solid blueviolet;
   margin:5px 0;
 }
 .merkinta:hover{
-  background:#FBB5F7;
+  background:#637281;
 }
 .lomake-alue{
   padding:10px 15;
